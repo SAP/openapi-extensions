@@ -163,20 +163,20 @@
               "type": "string",
               "format": "date",
               "examples": ["2022-01-01", "2021-11-14"],
-              "description": "Decommission date of an API (sunset data, when it will not be available anymore)."
+              "description": "Decommission date of an API (sunset date, when it will not be available anymore)."
             },
             {
               "type": "string",
               "pattern": "^[0-9]{2} [A-Za-z]{3} [0-9]{4}$",
               "examples": ["01 Jan 2022", "14 Nov 2021"],
-              "description": "Decommission date of an API (sunset data, when it will not be available anymore)."
+              "description": "Decommission date of an API (sunset date, when it will not be available anymore)."
             }
           ]
         },
         "successorApi": {
           "type": "string",
           "format": "uri-reference",
-          "description": "Provides an URL to a successor API."
+          "description": "Provides a URL to a successor API."
         }
       },
       "additionalProperties": false
@@ -709,7 +709,7 @@
         },
         "x-sap-dpp-entity-semantics": {
           "type": "string",
-          "description": "Primary meaning of the personal data in the annotated entity set. Entities annotated with x-sap-dpp-entity-semantics are synonymous to x-sap-dpp-is-potentially-personal.",
+          "description": "Primary meaning of the personal data in the annotated entity set. Entities annotated with x-sap-dpp-entity-semantics are synonymous with x-sap-dpp-is-potentially-personal.",
           "enum": ["sap:DataSubject", "sap:DataSubjectDetails", "sap:Other"]
         },
         "x-sap-dpp-data-subject-role": {
@@ -744,7 +744,7 @@
         "x-sap-dpp-is-potentially-sensitive": {
           "type": "boolean",
           "default": true,
-          "description": "Property contains potentially sensitive personal data. Sensitive personal data is a category of personal data that needs special handling. The determination which personal data is sensitive may differ for different legal areas or industries. Examples of sensitive personal data: 1. Special categories of personal data, such as data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data, data concerning health or sex life or sexual orientation. 2. Personal data subject to professional secrecy. 3. Personal data relating to criminal or administrative offenses. 4. Personal data concerning insurances and bank or credit card accounts."
+          "description": "Property contains potentially sensitive personal data. Sensitive personal data is a category of personal data that needs special handling. The determination of which personal data is sensitive may differ for different legal areas or industries. Examples of sensitive personal data: 1. Special categories of personal data, such as data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, trade union membership, genetic data, biometric data, data concerning health or sex life or sexual orientation. 2. Personal data subject to professional secrecy. 3. Personal data relating to criminal or administrative offenses. 4. Personal data concerning insurances and bank or credit card accounts."
         },
         "x-sap-ai-hint": {
           "type": "string",
@@ -1192,7 +1192,7 @@
             "successorOperationRef": {
               "type": "string",
               "format": "uri-reference",
-              "description": "A relative or absolute URI reference to an successor API operation. This field is mutually exclusive of the `successorOperationId` field, and MUST point to an [Operation Object](https://spec.openapis.org/oas/v3.0.3#operation-object). Relative `successorOperationRef` values MAY be used to locate an existing [Operation Object](https://spec.openapis.org/oas/v3.0.3#operation-object) in the OpenAPI definition."
+              "description": "A relative or absolute URI reference to a successor API operation. This field is mutually exclusive of the `successorOperationId` field, and MUST point to an [Operation Object](https://spec.openapis.org/oas/v3.0.3#operation-object). Relative `successorOperationRef` values MAY be used to locate an existing [Operation Object](https://spec.openapis.org/oas/v3.0.3#operation-object) in the OpenAPI definition."
             },
             "successorOperationId": {
               "type": "string",

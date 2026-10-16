@@ -2,7 +2,7 @@
 
 This extends [OpenAPI Specification v3.0.3](https://spec.openapis.org/oas/v3.0.3).
 
-Every OpenAPI description which comply with SAP-specific schema for OpenAPI Specification v3.0 is also a valid OpenAPI v3.0 document.
+Every OpenAPI description which complies with the SAP-specific schema for OpenAPI Specification v3.0 is also a valid OpenAPI v3.0 document.
 
 ## Notational Conventions
 
@@ -57,7 +57,7 @@ Constraints:
                 "properties": {
                   "resource": {
                     "type": "string",
-                    "description": "dentifies the target API for which the token is being requested. Ensures the token is audience-bound to this specific API. Value format: urn:sap:identity:application:provider:name:public_api:{clientId}",
+                    "description": "Identifies the target API for which the token is being requested. Ensures the token is audience-bound to this specific API. Value format: urn:sap:identity:application:provider:name:public_api:{clientId}",
                     "pattern": "urn:sap:identity:application:provider:name:public_api:{clientId}"
                   },
                   "tenantId": {
@@ -131,10 +131,10 @@ Constraints:
   - Type: `Object`
   - Schema:
 
-    | Field Name | Type                 | Description                                                         |
-    | ---------- | -------------------- | ------------------------------------------------------------------- |
-    | name       | `String`             | **REQUIRED**. Information title                                     |
-    | values     | `String` or `Object` | **REQUIRED**. Object MUST follow the structure like described below |
+    | Field Name | Type                 | Description                                                    |
+    | ---------- | -------------------- | -------------------------------------------------------------- |
+    | name       | `String`             | **REQUIRED**. Information title                                |
+    | values     | `String` or `Object` | **REQUIRED**. Object MUST follow the structure described below |
 
   - Values MUST be either a primitive string or an object of the following structure:
 
@@ -183,7 +183,7 @@ Constraints:
   | state              | `String` | **REQUIRED**. API lifecycle state. Possible values: `Beta`, `Active`, `Deprecated`, `Decommissioned`, `Development`. Defaults to `Active`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
   | deprecationDate    | `String` | **RECOMMENDED** if API is deprecated. Deprecation date of the API (when the deprecation process started).<br><br>The `deprecationDate` must follow the [RFC 3339 full-date](https://datatracker.ietf.org/doc/html/rfc3339#section-5.6) format `yyyy-mm-dd`. For example: `2022-01-01`, `2021-11-14`<br><br>Consumers should use this date to know they should stop using this deprecated API. The provided date may be used to anticipate the decommission deadline, based on the rules for minimum lifespan (see [Deprecation Policy](https://sap.sharepoint.com/:w:/r/teams/CPAIntegration/_layouts/15/Doc.aspx?sourcedoc=%7B39FAC929-C93A-47D7-B299-3442A522F05F%7D&file=API%20Deprecation%20Policy.docx&action=default&mobileredirect=true)). |
   | decommissionedDate | `String` | **RECOMMENDED** if API is Deprecated. MUST be provided once known. Decommission date (aka sunset date) of the API, when it will not be available anymore.<br><br>The `decommissionedDate` must follow the [RFC 3339 full-date](https://datatracker.ietf.org/doc/html/rfc3339#section-5.6) format `yyyy-mm-dd`. For example: `2022-01-01`, `2021-11-14`                                                                                                                                                                                                                                                                                                                                                                                            |
-  | successorApi       | `Uri`    | Provides an URL to a successor API                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+  | successorApi       | `Uri`    | Provides a URL to a successor API                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 ### `x-sap-extensible`
 
@@ -235,7 +235,7 @@ Example:
 - Type: `String`
 - Format: Valid [ORD ID for API Resources](https://open-resource-discovery.github.io/specification/spec-v1/interfaces/document#api-resource_ordid)
 - Used at: [OpenAPI Object](https://spec.openapis.org/oas/v3.0.3#openapi-object) (root level)
-- Description: The ORD ID can be used to lookup more high-level metadata via Business Accelerator Hub or Unified Customer Landscape. It is also used when describing Integration Dependencies.
+- Description: The ORD ID can be used to look up more high-level metadata via Business Accelerator Hub or Unified Customer Landscape. It is also used when describing Integration Dependencies.
 
 Constraints:
 
@@ -328,7 +328,7 @@ Constraints:
   | Field Name            | Type     | Description                                                                                                                                                                                                                                                                                                                                                                                                              |
   | --------------------- | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
   | deprecationDate       | `String` | **REQUIRED** if API operation is deprecated. Deprecation date of the API operation (when the deprecation process started).<br><br>The `deprecationDate` must follow the [RFC 3339 full-date](https://datatracker.ietf.org/doc/html/rfc3339#section-5.6) format `yyyy-mm-dd`. For example: `2022-01-01`, `2021-11-14`<br><br>Consumers should use this date to know they should stop using this deprecated API operation. |
-  | successorOperationRef | `Uri`    | A relative or absolute URI reference to an successor API operation. This field is mutually exclusive of the `successorOperationId` field, and MUST point to an [Operation Object](https://spec.openapis.org/oas/v3.0.3#operation-object). Relative `successorOperationRef` values MAY be used to locate an existing [Operation Object](https://spec.openapis.org/oas/v3.0.3#operation-object) in the OpenAPI definition. |
+  | successorOperationRef | `Uri`    | A relative or absolute URI reference to a successor API operation. This field is mutually exclusive of the `successorOperationId` field, and MUST point to an [Operation Object](https://spec.openapis.org/oas/v3.0.3#operation-object). Relative `successorOperationRef` values MAY be used to locate an existing [Operation Object](https://spec.openapis.org/oas/v3.0.3#operation-object) in the OpenAPI definition.  |
   | successorOperationId  | `String` | The name of an existing, resolvable successor API operation, as defined with a unique `operationId`. This field is mutually exclusive of the `successorOperationRef` field.                                                                                                                                                                                                                                              |
 
 Example:
@@ -587,7 +587,7 @@ Constraints:
   - `sap:DataSubjectDetails`
   - `sap:Other`
 - Used at: [OpenAPI Schema Object](https://spec.openapis.org/oas/v3.0.3#schemaObject)
-- Description: Primary meaning of the personal data in the annotated entity set. Entities annotated with `x-sap-dpp-entity-semantics` are synonymous to `x-sap-dpp-is-potentially-personal`.
+- Description: Primary meaning of the personal data in the annotated entity set. Entities annotated with `x-sap-dpp-entity-semantics` are synonymous with `x-sap-dpp-is-potentially-personal`.
 
 Constraints:
 
@@ -649,7 +649,7 @@ Constraints:
 
 - Type: `Boolean`
 - Used at: [Schema Object](https://spec.openapis.org/oas/v3.0.3#schema-object)
-- Description: Property contains potentially sensitive personal data. Sensitive personal data is a category of personal data that needs special handling. The determination which personal data is sensitive may differ for different legal areas or industries.
+- Description: Property contains potentially sensitive personal data. Sensitive personal data is a category of personal data that needs special handling. The determination of which personal data is sensitive may differ for different legal areas or industries.
 
   Examples of sensitive personal data:
 
