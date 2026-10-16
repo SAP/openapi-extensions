@@ -6,7 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
-## [[0.16.0](https://github.com/SAP/openapi-specification/releases/tag/v0.16.0)] - 2026-09-30
+### Changed
+
+- Project renamed to "OpenAPI Extensions for SAP Ecosystem" and so the GitHub repository and NPM package accordingly.
+
+## [[0.16.0](https://github.com/SAP/openapi-extensions/releases/tag/v0.16.0)] - 2026-09-30
 
 ### Added
 

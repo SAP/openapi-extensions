@@ -1,17 +1,15 @@
-[![REUSE status](https://api.reuse.software/badge/github.com/SAP/openapi-specification)](https://api.reuse.software/info/github.com/SAP/openapi-specification)
+[![REUSE status](https://api.reuse.software/badge/github.com/SAP/openapi-extensions)](https://api.reuse.software/info/github.com/SAP/openapi-extensions)
 
-# OpenAPI Specification for SAP Ecosystem
+# OpenAPI Extensions for SAP Ecosystem
 
 This repository contains extensions to the original [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification) which are relevant for SAP Ecosystem and corresponding tooling. Additionally, it provides a compiled "ready to use" version of schema files which includes the original schemas with SAP-specific changes on top.
 
-The following versions of OpenAPI Specification are supported:
+The following extended versions of OpenAPI Specification are currently supported:
 
-- [OpenAPI Specification v2.0 for SAP Ecosystem](./sap-schemas/v2.0) (based on [OpenAPI v2.0](https://spec.openapis.org/oas/v2.0), also known as Swagger 2.0)
-- [OpenAPI Specification v3.0 for SAP Ecosystem](./sap-schemas/v3.0) (based on [OpenAPI v3.0.3](https://spec.openapis.org/oas/v3.0.3))
+- [OpenAPI v2.0](./sap-schemas/v2.0) (also known as Swagger 2.0)
+- [OpenAPI v3.0](./sap-schemas/v3.0)
 
-Every OpenAPI Specification for SAP Ecosystem document is also a valid OpenAPI document of a corresponding version.
-
-The goal of these specification is to describe SAP's extensions to OpenAPI Specifications in a standardized way. The specification are used by [SAP API Business Hub](https://api.sap.com) and other tooling in SAP Ecosystem.
+The goal of these SAP-specific schemas is to describe SAP's extensions to OpenAPI Specifications in a standardized way. The schemas are used by [SAP Business Accelerator Hub](https://api.sap.com) and other tooling in SAP Ecosystem.
 
 ## Requirements
 
@@ -57,7 +55,7 @@ OpenAPI is based on the JSON type system and uses the `format` keyword for diffe
 [hana]: https://help.sap.com/docs/SAP_HANA_PLATFORM/4fe29514fd584807ac9f2a04f6754767/20a1569875191014b507cf392724b7eb.html
 [odata]: https://docs.oasis-open.org/odata/odata-csdl-json/v4.01/odata-csdl-json-v4.01.html#sec_PrimitiveTypes
 [formats]: https://spec.openapis.org/registry/format/index.html
-[ps]: https://github.com/SAP/openapi-specification/tree/main/sap-schemas/v3.0#x-sap-precision
+[ps]: https://github.com/SAP/openapi-extensions/tree/main/sap-schemas/v3.0#x-sap-precision
 
 ## How to obtain support
 
@@ -73,4 +71,4 @@ We as members, contributors, and leaders pledge to make participation in our com
 
 ## Licensing
 
-Please see our [LICENSE](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/SAP/openapi-specification).
+Please see our [LICENSE](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/SAP/openapi-extensions).
