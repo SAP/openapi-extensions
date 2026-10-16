@@ -1,8 +1,8 @@
-# SAP OpenAPI Specification v2.0
+# SAP Extensions for OpenAPI Specification v2.0
 
-This specification is based on [OpenAPI Specification v2.0](https://spec.openapis.org/oas/v2.0).
+This extends [OpenAPI Specification v2.0](https://spec.openapis.org/oas/v2.0).
 
-Every SAP OpenAPI Specification v2.0 document is also a valid OpenAPI v2.0 (Swagger v2.0) document.
+Every OpenAPI description which comply with SAP-specific schema for OpenAPI Specification v2.0 is also a valid OpenAPI v2.0 (Swagger v2.0) document.
 
 ## Notational Conventions
 

@@ -1,8 +1,8 @@
-# SAP OpenAPI Specification v3.0
+# SAP Extensions for OpenAPI Specification v3.0
 
-This specification is based on [OpenAPI Specification v3.0.3](https://spec.openapis.org/oas/v3.0.3).
+This extends [OpenAPI Specification v3.0.3](https://spec.openapis.org/oas/v3.0.3).
 
-Every SAP OpenAPI Specification v3.0 document is also a valid OpenAPI v3.0 document.
+Every OpenAPI description which comply with SAP-specific schema for OpenAPI Specification v3.0 is also a valid OpenAPI v3.0 document.
 
 ## Notational Conventions
 

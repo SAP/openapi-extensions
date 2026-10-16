@@ -1,7 +1,7 @@
 {
-  "name": "@sap/openapi-specification",
-  "version": "0.16.0",
-  "description": "SAP OpenAPI Specification for OpenAPI v2.0 (Swagger 2.0) and OpenAPI 3.0",
+  "name": "@sap/openapi-extensions",
+  "version": "0.17.0",
+  "description": "OpenAPI Extensions for SAP Ecosystem",
   "author": "SAP SE",
   "license": "Apache-2.0",
   "main": "./dist/src/index.js",
@@ -17,7 +17,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SAP/openapi-specification.git"
+    "url": "git+https://github.com/SAP/openapi-extensions.git"
   },
   "devDependencies": {
     "@types/lodash": "4.17.25",
