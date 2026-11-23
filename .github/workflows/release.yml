@@ -1,7 +1,8 @@
 name: Publish Package to NPMJS.org
 on:
   workflow_dispatch:
-permissions: {}
+permissions:
+  contents: read
 
 jobs:
   publish-to-npmjs:
@@ -13,15 +14,15 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
 
+        with:
+          persist-credentials: false
       - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
-          node-version: "24"
+          node-version: "26.13.1"
           # registry-url is required for releasing packages
           registry-url: "https://registry.npmjs.org"
 
-      - name: Install latest npm cli
-        run: npm install -g npm@latest
-
+          package-manager-cache: false
       - run: npm ci
 
       - name: Publish package
@@ -29,3 +30,4 @@ jobs:
         # --access public is only hard required for the initial release, but it doesn't hurt having it setup
         # npm version >=11.5.1 required for trusted publisher
         run: npm publish --provenance --access public
+    if: github.ref == 'refs/heads/main'

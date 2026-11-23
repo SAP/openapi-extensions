@@ -1,0 +1,4 @@
+# Review owners for CI and build configuration.
+/.github/ @Fannon
+/package.json @Fannon
+/package-lock.json @Fannon
