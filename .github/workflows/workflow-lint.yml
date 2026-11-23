@@ -23,5 +23,3 @@ jobs:
 
       - name: Check workflow security
         run: pipx run --spec zizmor==1.33.1 zizmor --offline --no-progress --format github --min-severity medium .github/workflows
-    permissions:
-      contents: read
