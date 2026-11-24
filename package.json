@@ -26,8 +26,5 @@
     "prettier": "^3.9.9",
     "tsx": "^4.20.6",
     "typescript": "7.0.2"
-  },
-  "engines": {
-    "node": ">=26"
   }
 }
