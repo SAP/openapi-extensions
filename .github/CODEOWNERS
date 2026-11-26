@@ -2,3 +2,6 @@
 /.github/ @Fannon
 /package.json @Fannon
 /package-lock.json @Fannon
+
+# Review the installer policy with the corresponding package owners.
+/.npmrc @Fannon
