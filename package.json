@@ -26,5 +26,16 @@
     "prettier": "^3.9.9",
     "tsx": "^4.20.6",
     "typescript": "7.0.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": false,
+    "fsevents@2.3.3": false
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "npm",
+      "version": ">=11.20.0",
+      "onFail": "error"
+    }
   }
 }

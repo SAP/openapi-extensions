@@ -19,6 +19,9 @@ No specific tools are needed to use these schema files.
 
 Contributors to this repository will need to run the generator, which requires Node.js to be installed.
 
+The published npm package exports JSON schemas through a small JavaScript wrapper and has no production dependencies.
+CI and schema generation use Node.js 26; consumers do not inherit that tooling requirement.
+
 ## Known Issues
 
 No known issues.

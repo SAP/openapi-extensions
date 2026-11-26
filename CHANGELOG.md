@@ -8,6 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- CI and schema generation use Node.js 26 without imposing a new Node.js minimum on consumers of the published schema package.
+
 - Project renamed to "OpenAPI Extensions for SAP Ecosystem" and so the GitHub repository and NPM package accordingly.
 
 ## [[0.16.0](https://github.com/SAP/openapi-extensions/releases/tag/v0.16.0)] - 2026-09-30
